@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="learn.com.howdoyoufeeltoday.MainActivity"
+    android:weightSum="1">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvConversation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.03"
+        android:paddingTop="5dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtInput"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Enter Text Here"
+            android:layout_toLeftOf="@+id/btnSpeech"
+            android:textColor="@android:color/white"
+            android:imeOptions="actionDone"
+            />
+
+            <ImageButton
+                android:id="@+id/btnSpeech"
+                android:layout_width="40dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_mic_red_800_24dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
