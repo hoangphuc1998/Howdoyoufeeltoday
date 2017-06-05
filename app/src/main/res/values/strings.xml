@@ -3,4 +3,6 @@
     <string name="Select_an_image">You must select an image to continue</string>
     <string name="Take_photo">Take a photo</string>
     <string name="Choose_from_album">Choose from gallery</string>
+    <string name="faceSubscription_key">f20b7086a4cc42f285676cf393a93f1b</string>
+    <string name="subscription_key">82b417bbe7ce4c708395aaa3f91b9b82</string>
 </resources>

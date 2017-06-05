@@ -8,7 +8,7 @@
     tools:context="learn.com.howdoyoufeeltoday.helper.ViewImageActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgPhoto"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center_horizontal"
